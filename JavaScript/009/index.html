@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var zeroPadding = function(num){
+    // 10未満なら先頭に'0'をつける
+    if([num] < 10){
+        return ['0' + num];
+    // そうでないならそのままnumを返す
+    }else{
+        return [num];
+    }
+}
+
+// 動作を確認する
+console.log(zeroPadding([2]))
+    </script>
+</body>
+</html>

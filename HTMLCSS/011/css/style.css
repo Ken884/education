@@ -1,0 +1,28 @@
+@import url(sanitize.css);
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+
+.box {
+    background-color: darkgray;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner {
+    background-color: darkred;
+    width: 40%;
+    height: 40%;
+}
