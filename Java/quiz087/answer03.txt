@@ -1,0 +1,15 @@
+次のコードは何がまずいでしょう。
+
+abstract class Dog{
+    abstract public void walk();
+}
+
+class Main{
+    public void main(String args[]){
+        Dog dog = new Dog();
+        dog.walk();
+    }
+}
+
+//walkは抽象メソッドなので、オーバーライドしてからでないと利用できない。
+  Dogは抽象クラスなのでインスタンスを生成できない。
