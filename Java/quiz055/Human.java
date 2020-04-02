@@ -1,5 +1,6 @@
 package quiz055;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Human {
 	private String name;
@@ -27,7 +28,7 @@ public class Human {
 		Human two = new Human("Cathy", 32);
 		Human thr = new Human("George", 21);
 
-		ArrayList<Human> humans = new ArrayList<Human>();
+		List<Human> humans = new ArrayList<Human>();
 
 		humans.add(one);
 		humans.add(two);

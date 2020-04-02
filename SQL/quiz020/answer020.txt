@@ -1,0 +1,22 @@
+SELECT W.workname, C.name
+FROM doujo.manga_tbl AS W
+JOIN doujo.company_tbl AS C
+ON W.company_id = C.id
+
+DELETE FROM doujo.company_tbl
+WHERE id = 1
+
+SELECT W.workname, C.name
+FROM doujo.manga_tbl AS W
+INNER JOIN doujo.company_tbl AS C
+ON W.company_id = C.id
+--集英社が出版社だった作品は非表示
+
+SELECT W.workname, C.name
+FROM doujo.manga_tbl AS W
+LEFT JOIN doujo.company_tbl AS C
+ON W.company_id = C.id
+--集英社が出版社だった作品も表示。ただし出版社名はNULL。
+
+INSERT INTO doujo.company_tbl (id, name)
+VALUES (1, '集英社')

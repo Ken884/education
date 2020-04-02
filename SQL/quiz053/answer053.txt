@@ -1,0 +1,26 @@
+SELECT C.name, hoge._2016, hage._2017, chage._2018
+FROM doujo.customers AS C
+JOIN(SELECT base1.customer_id, SUM(base1.amount * base1.unit_price) AS _2016
+		FROM(SELECT S1.customer_id, S1.order_date, SD1.amount, SD1.unit_price
+			FROM doujo.sales AS S1
+			JOIN doujo.sales_details AS SD1
+			ON S1.id = SD1.sale_id) AS base1
+			WHERE base1.order_date BETWEEN '2016-01-01' AND '2016-12-31'
+		GROUP BY base1.customer_id) AS hoge
+ON C.id = hoge.customer_id
+JOIN(SELECT base2.customer_id, SUM(base2.amount * base2.unit_price) AS _2017
+		FROM(SELECT S2.customer_id, S2.order_date, SD2.amount, SD2.unit_price
+			FROM doujo.sales AS S2
+			JOIN doujo.sales_details AS SD2
+			ON S2.id = SD2.sale_id) AS base2
+			WHERE base2.order_date BETWEEN '2017-01-01' AND '2017-12-31'
+		GROUP BY base2.customer_id) AS hage
+ON C.id = hage.customer_id
+JOIN(SELECT base3.customer_id, SUM(base3.amount * base3.unit_price) AS _2018
+		FROM(SELECT S3.customer_id, S3.order_date, SD3.amount, SD3.unit_price
+			FROM doujo.sales AS S3
+			JOIN doujo.sales_details AS SD3
+			ON S3.id = SD3.sale_id) AS base3
+			WHERE base3.order_date BETWEEN '2017-01-01' AND '2017-12-31'
+		GROUP BY base3.customer_id) AS chage
+ON C.id = chage.customer_id

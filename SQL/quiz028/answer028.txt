@@ -1,0 +1,5 @@
+SELECT workname
+FROM doujo.manga_tbl AS M
+JOIN doujo.anime_tbl AS A
+ON M.id = A.manga_id
+WHERE A.manga_id IN(SELECT manga_id FROM doujo.anime_tbl GROUP BY manga_id HAVING COUNT(*) >1)

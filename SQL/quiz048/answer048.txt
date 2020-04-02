@@ -1,0 +1,6 @@
+SELECT B.name, I.volume, (P.max_price - P.min_price) AS price_diff
+FROM(SELECT MAX(unit_price) AS max_price, MIN(unit_price) AS min_price, item_id FROM doujo.sales_details GROUP BY item_id) AS P
+JOIN doujo.items AS I
+ON P.item_id = I.id
+JOIN doujo.brands AS B
+ON I.brand_id = B.id

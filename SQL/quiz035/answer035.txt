@@ -1,0 +1,11 @@
+SELECT C.name, S.order_date, B.name, I.volume, SD.amount, SD.unit_price
+FROM doujo.customers AS C
+JOIN doujo.sales AS S
+ON C.id = S.customer_id
+JOIN doujo.sales_details AS SD
+ON S.id = SD.sale_id
+JOIN doujo.items AS I
+ON SD.item_id = I.id
+JOIN doujo.brands AS B
+ON I.brand_id = B.id
+WHERE S.send_date IS NULL

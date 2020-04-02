@@ -1,0 +1,5 @@
+SELECT M.name, B.name
+FROM doujo.brands AS B
+JOIN doujo.makers AS M
+ON B.maker_id = M.id
+ORDER BY M.name

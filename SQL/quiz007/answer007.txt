@@ -1,0 +1,9 @@
+CREATE TABLE students(
+class int(11),
+id_in_class int(11),
+name nvarchar(20) NOT NULL,
+PRIMARY KEY(class, id_in_class)
+);
+
+INSERT INTO students (class, id_in_class, name)
+VALUES (3, 1, 'hanako yamada');

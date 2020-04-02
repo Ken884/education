@@ -1,0 +1,8 @@
+INSERT INTO doujo.read_manga_tbl (reader_name, manga_title)
+VALUES ('hayashi', 'BLEACH')
+
+INSERT INTO doujo.read_manga_tbl (reader_name, manga_title)
+VALUES ('hayashi', 'HUNTER×HUNTER')
+
+INSERT INTO doujo.read_manga_tbl (reader_name, manga_title)
+VALUES ('hayashi', 'るろうに剣心')

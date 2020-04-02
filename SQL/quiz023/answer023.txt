@@ -1,0 +1,6 @@
+SELECT name,Sum(doujo.manga_tbl.circulation)
+FROM doujo.manga_tbl
+JOIN doujo.artist_tbl
+ON doujo.artist_tbl.id = doujo.manga_tbl.artist_id
+GROUP BY doujo.manga_tbl.artist_id
+ORDER BY S DESC

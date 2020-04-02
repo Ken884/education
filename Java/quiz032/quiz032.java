@@ -14,13 +14,12 @@ public class quiz032 {
 
 
 	public static boolean canDevide(int a, int b) {
-
-
-		if(a % b == 0) {
+			return a % b == 0;
+			/*if(a % b == 0) {
 			return true;
 		}else {
 			return false;
-		}
+		}*/
 	}
 
 }

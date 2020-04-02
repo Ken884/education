@@ -1,0 +1,6 @@
+SELECT name, workname
+FROM doujo.manga_tbl
+JOIN doujo.artist_tbl
+ON artist_id = doujo.artist_tbl.id
+WHERE artist_id IN(SELECT artist_id  FROM doujo.manga_tbl GROUP BY artist_id HAVING COUNT(*)>1)
+ORDER BY doujo.artist_tbl.name
