@@ -1,0 +1,6 @@
+C:\quiz\C#\quiz032\quiz032\obj\Debug\quiz032.csproj.CoreCompileInputs.cache
+C:\quiz\C#\quiz032\quiz032\bin\Debug\quiz032.exe.config
+C:\quiz\C#\quiz032\quiz032\bin\Debug\quiz032.exe
+C:\quiz\C#\quiz032\quiz032\bin\Debug\quiz032.pdb
+C:\quiz\C#\quiz032\quiz032\obj\Debug\quiz032.exe
+C:\quiz\C#\quiz032\quiz032\obj\Debug\quiz032.pdb

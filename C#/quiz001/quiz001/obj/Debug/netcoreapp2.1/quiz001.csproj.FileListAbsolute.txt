@@ -1,0 +1,11 @@
+C:\quiz\C#\quiz001\quiz001\bin\Debug\netcoreapp2.1\quiz001.deps.json
+C:\quiz\C#\quiz001\quiz001\bin\Debug\netcoreapp2.1\quiz001.runtimeconfig.json
+C:\quiz\C#\quiz001\quiz001\bin\Debug\netcoreapp2.1\quiz001.runtimeconfig.dev.json
+C:\quiz\C#\quiz001\quiz001\bin\Debug\netcoreapp2.1\quiz001.dll
+C:\quiz\C#\quiz001\quiz001\bin\Debug\netcoreapp2.1\quiz001.pdb
+C:\quiz\C#\quiz001\quiz001\obj\Debug\netcoreapp2.1\quiz001.csprojAssemblyReference.cache
+C:\quiz\C#\quiz001\quiz001\obj\Debug\netcoreapp2.1\quiz001.csproj.CoreCompileInputs.cache
+C:\quiz\C#\quiz001\quiz001\obj\Debug\netcoreapp2.1\quiz001.AssemblyInfoInputs.cache
+C:\quiz\C#\quiz001\quiz001\obj\Debug\netcoreapp2.1\quiz001.AssemblyInfo.cs
+C:\quiz\C#\quiz001\quiz001\obj\Debug\netcoreapp2.1\quiz001.dll
+C:\quiz\C#\quiz001\quiz001\obj\Debug\netcoreapp2.1\quiz001.pdb
