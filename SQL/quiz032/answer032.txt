@@ -1,4 +1,0 @@
-SELECT workname
-FROM doujo.manga_tbl
-WHERE EXISTS (SELECT * FROM doujo.read_manga_tbl AS R 
-				WHERE R.manga_title = doujo.manga_tbl.workname AND R.reader_name = 'hayashi')

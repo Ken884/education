@@ -1,3 +1,0 @@
-SELECT name AS 'dead artists'
-FROM doujo.artist_tbl
-WHERE age < 0

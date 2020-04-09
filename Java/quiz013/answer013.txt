@@ -1,6 +1,0 @@
-統合開発環境　IDE/Integrated Development Environment
-ソフトウェア開発に必要なソフトウェアを一つに組み合わせ
-同じ画面から統一的な操作法で利用できるようにしたソフトウェア。
-
-Eclipse、Visual Studio(Microsoft)、Claris FileMaker、PhpStorm
-Unity、Xcode（Apple）

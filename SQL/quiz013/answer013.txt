@@ -1,6 +1,0 @@
-SELECT W.workname, A.name AS artist, C.name AS company
-  FROM doujo.manga_tbl AS W
-  JOIN doujo.artist_tbl AS A
-  ON W.artist_id = A.id
-  JOIN doujo.company_tbl AS C
-  ON W.company_id = C.id

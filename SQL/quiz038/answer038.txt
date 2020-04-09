@@ -1,7 +1,0 @@
-SELECT M.name, B.name, I.volume
-FROM doujo.makers AS M
-JOIN doujo.brands AS B
-ON M.id = B.maker_id
-JOIN doujo.items AS I
-ON B.id = I.brand_id
-ORDER BY M.name

@@ -1,7 +1,0 @@
-SELECT sale_id, name, order_date, price_sum
-FROM (SELECT sale_id, SUM(unit_price * amount) AS price_sum FROM doujo.sales_details GROUP BY sale_id) AS SD
-JOIN doujo.sales AS S
-ON S.id = SD.sale_id
-JOIN doujo.customers AS C
-ON C.id = S.customer_id
-WHERE price_sum >= 100000

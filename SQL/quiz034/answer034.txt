@@ -1,5 +1,0 @@
-SELECT T.type_name, COUNT(B.name) AS brand_num
-FROM doujo.bevarage_types AS T
-JOIN doujo.brands AS B
-ON T.id = B.type_id
-GROUP BY T.type_name

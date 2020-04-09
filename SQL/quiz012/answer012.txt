@@ -1,3 +1,0 @@
-SELECT workname, serialize_from 
-  FROM doujo.manga_tbl
-  WHERE serialize_to IS NULL 

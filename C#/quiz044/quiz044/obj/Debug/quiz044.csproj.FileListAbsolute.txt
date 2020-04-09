@@ -1,7 +1,0 @@
-C:\quiz\C#\quiz044\quiz044\bin\Debug\quiz044.exe.config
-C:\quiz\C#\quiz044\quiz044\bin\Debug\quiz044.exe
-C:\quiz\C#\quiz044\quiz044\bin\Debug\quiz044.pdb
-C:\quiz\C#\quiz044\quiz044\obj\Debug\quiz044.csprojAssemblyReference.cache
-C:\quiz\C#\quiz044\quiz044\obj\Debug\quiz044.csproj.CoreCompileInputs.cache
-C:\quiz\C#\quiz044\quiz044\obj\Debug\quiz044.exe
-C:\quiz\C#\quiz044\quiz044\obj\Debug\quiz044.pdb

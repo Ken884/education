@@ -1,5 +1,0 @@
-SELECT C.name, S.id, S.runtime
-FROM (SELECT id, customer_id, TIMESTAMPDIFF(DAY,order_date, send_date) AS runtime FROM doujo.sales) AS S
-JOIN doujo.customers AS C
-ON S.customer_id = C.id
-WHERE S.runtime >= 7

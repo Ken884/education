@@ -1,2 +1,0 @@
-INSERT INTO doujo.artist_tbl(id, name, age, hometown)
-VALUES (100, '林賢佑',25,'北海道') 

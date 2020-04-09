@@ -1,5 +1,0 @@
-次のコードは何がまずいでしょう。
-
-class Child extends Parent, Person { }
-
-//Javaでは複数のクラスを継承する多重継承は許されていない。

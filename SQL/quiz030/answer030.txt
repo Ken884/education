@@ -1,6 +1,0 @@
-SELECT C.name, SUM(M.circulation) AS SC
-FROM doujo.manga_tbl AS M
-JOIN doujo.company_tbl AS C
-ON M.company_id = C.id
-GROUP BY C.name
-ORDER BY SC DESC

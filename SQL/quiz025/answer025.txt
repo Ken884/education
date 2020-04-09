@@ -1,4 +1,0 @@
-SELECT workname, (CASE broadcast_to WHEN broadcast_to IS NULL THEN '放送中' ELSE '放送終了' END) AS 放送状況
-FROM doujo.manga_tbl
-JOIN doujo.anime_tbl
-ON doujo.anime_tbl.manga_id = doujo.manga_tbl.id

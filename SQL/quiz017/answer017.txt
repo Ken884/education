@@ -1,3 +1,0 @@
-SELECT workname
-FROM doujo.manga_tbl
-WHERE artist_id = (SELECT id FROM doujo.artist_tbl WHERE name = '冨樫義博')
