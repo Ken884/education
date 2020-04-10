@@ -1,0 +1,7 @@
+C:\quiz\C#\quiz053-054\quiz053-054\bin\Debug\quiz053-054.exe.config
+C:\quiz\C#\quiz053-054\quiz053-054\bin\Debug\quiz053-054.exe
+C:\quiz\C#\quiz053-054\quiz053-054\bin\Debug\quiz053-054.pdb
+C:\quiz\C#\quiz053-054\quiz053-054\obj\Debug\quiz053-054.csprojAssemblyReference.cache
+C:\quiz\C#\quiz053-054\quiz053-054\obj\Debug\quiz053-054.csproj.CoreCompileInputs.cache
+C:\quiz\C#\quiz053-054\quiz053-054\obj\Debug\quiz053-054.exe
+C:\quiz\C#\quiz053-054\quiz053-054\obj\Debug\quiz053-054.pdb
