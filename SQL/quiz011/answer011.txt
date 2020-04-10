@@ -1,0 +1,3 @@
+SELECT workname, (serialize_to - serialize_from) 
+  FROM doujo.manga_tbl
+  WHERE serialize_to - serialize_from >= 15 

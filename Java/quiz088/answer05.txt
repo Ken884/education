@@ -1,0 +1,11 @@
+次のコードは何がまずいでしょうか。
+
+try{
+    doSomething();
+} catch (Exception e) {
+    rescueSomething();
+} catch (RuntimeException e){
+    rescueSomethind2();
+}
+
+//ExceptionはExceptionを継承するすべてのクラスをキャッチするのでRuntimeExceptionが発生してもresucueSomethig2メソッドで処理できない。

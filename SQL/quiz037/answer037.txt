@@ -1,0 +1,8 @@
+INSERT INTO doujo.sales(id, customer_id, order_date)
+VALUES (582, 15, CURRENT_DATE)
+
+INSERT INTO doujo.sales_detail(id, sale_id, item_id, amount, unit_price)
+VALUES (2001, 582, 57, 10, 金額)
+
+INSERT INTO doujo.sales_detail(id, sale_id, item_id, amount, unit_price)
+VALUES (2001, 582, 131, 5, 金額)

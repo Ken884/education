@@ -1,0 +1,5 @@
+SELECT A.name, W.workname
+FROM doujo.manga_tbl AS W
+RIGHT JOIN doujo.artist_tbl AS A
+ON A.id = W.artist_id
+ORDER BY A.id

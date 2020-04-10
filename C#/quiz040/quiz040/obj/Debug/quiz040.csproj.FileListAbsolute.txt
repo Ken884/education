@@ -1,0 +1,7 @@
+C:\quiz\C#\quiz040\quiz040\bin\Debug\quiz040.exe.config
+C:\quiz\C#\quiz040\quiz040\bin\Debug\quiz040.exe
+C:\quiz\C#\quiz040\quiz040\bin\Debug\quiz040.pdb
+C:\quiz\C#\quiz040\quiz040\obj\Debug\quiz040.csproj.CoreCompileInputs.cache
+C:\quiz\C#\quiz040\quiz040\obj\Debug\quiz040.exe
+C:\quiz\C#\quiz040\quiz040\obj\Debug\quiz040.pdb
+C:\quiz\C#\quiz040\quiz040\obj\Debug\quiz040.csprojAssemblyReference.cache

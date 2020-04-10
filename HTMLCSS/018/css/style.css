@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1200px;
+
+}
+
+.red{
+    background-color: red;
+
+}
+
+.blue{
+    background-color: blue;
+   
+}
+
+.yellow{
+    background-color: yellow;
+
+}
+
+.red, .blue, .yellow{
+    height: 200px;
+}
+

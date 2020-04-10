@@ -1,0 +1,12 @@
+SELECT S2.id, B.name, I.volume, SD.amount
+FROM (SELECT id
+		FROM doujo.sales AS S1
+		WHERE S1.customer_id = 20
+		ORDER BY S1.id DESC LIMIT 5) AS S2
+LEFT JOIN doujo.sales_details AS SD
+ON S2.id = SD.sale_id
+LEFT JOIN doujo.items AS I
+ON SD.item_id = I.id
+LEFT JOIN doujo.brands AS B
+ON I.brand_id = B.id
+ORDER BY S2.id DESC

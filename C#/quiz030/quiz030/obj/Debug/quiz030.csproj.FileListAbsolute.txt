@@ -1,0 +1,7 @@
+C:\quiz\C#\quiz030\quiz030\bin\Debug\quiz030.exe.config
+C:\quiz\C#\quiz030\quiz030\bin\Debug\quiz030.exe
+C:\quiz\C#\quiz030\quiz030\bin\Debug\quiz030.pdb
+C:\quiz\C#\quiz030\quiz030\obj\Debug\quiz030.csprojAssemblyReference.cache
+C:\quiz\C#\quiz030\quiz030\obj\Debug\quiz030.csproj.CoreCompileInputs.cache
+C:\quiz\C#\quiz030\quiz030\obj\Debug\quiz030.exe
+C:\quiz\C#\quiz030\quiz030\obj\Debug\quiz030.pdb

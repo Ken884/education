@@ -1,0 +1,9 @@
+SELECT T.name, T.total_price 
+FROM(SELECT SUM(SS.unit_price * SS.amount) AS total_price, SS.name
+		FROM(SELECT S.id, SD.sale_id, S.customer_id, SD.amount, SD.unit_price, C.name
+				FROM doujo.sales AS S 
+				JOIN doujo.sales_details AS SD 
+				ON S.id = SD.sale_id
+				JOIN doujo.customers AS C
+				ON S.customer_id = C.id) AS SS
+GROUP BY SS.customer_id) AS T

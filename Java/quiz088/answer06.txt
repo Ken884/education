@@ -1,0 +1,16 @@
+次のコードでNumberFormatExceptionが発生した場合、なんと出力されるでしょうか。
+
+try{
+    doSomethind();
+} catch(NumberFormatException e){
+    System.out.print("x");
+} catch(Exception ex){
+    System.out.print("y");
+} finally {
+    System.out.print("z");
+}
+
+//xyz
+  最初にNumberFormatExceptionのみをキャッチする->x
+　Exceptionを継承するすべての例外クラスがキャッチされる->y
+　例外の発生如何にかかわらずfinallyブロックの実行分が処理される->z

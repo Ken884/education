@@ -1,0 +1,4 @@
+SELECT order_date
+FROM doujo.sales AS S
+WHERE S.customer_id = 20
+ORDER BY S.order_date DESC LIMIT 5

@@ -1,0 +1,10 @@
+C:\quiz\C#\quiz051\quiz051\bin\Debug\quiz051.exe.config
+C:\quiz\C#\quiz051\quiz051\bin\Debug\quiz051.exe
+C:\quiz\C#\quiz051\quiz051\bin\Debug\quiz051.pdb
+C:\quiz\C#\quiz051\quiz051\obj\Debug\quiz051.csprojAssemblyReference.cache
+C:\quiz\C#\quiz051\quiz051\obj\Debug\quiz051.Form1.resources
+C:\quiz\C#\quiz051\quiz051\obj\Debug\quiz051.Properties.Resources.resources
+C:\quiz\C#\quiz051\quiz051\obj\Debug\quiz051.csproj.GenerateResource.cache
+C:\quiz\C#\quiz051\quiz051\obj\Debug\quiz051.csproj.CoreCompileInputs.cache
+C:\quiz\C#\quiz051\quiz051\obj\Debug\quiz051.exe
+C:\quiz\C#\quiz051\quiz051\obj\Debug\quiz051.pdb

@@ -1,0 +1,11 @@
+SELECT one.maker_id, one.type1, two.type2, three.type3, four.type4, five.type5
+FROM (SELECT maker_id, COUNT(type_id) AS type1 FROM doujo.brands WHERE type_id = 1 GROUP BY maker_id) AS one
+LEFT JOIN (SELECT maker_id, COUNT(type_id) AS type2 FROM doujo.brands WHERE type_id = 2 GROUP BY maker_id) AS two
+ON one.maker_id= two.maker_id
+LEFT JOIN (SELECT maker_id, COUNT(type_id) AS type3 FROM doujo.brands WHERE type_id = 3 GROUP BY maker_id) AS three
+ON one.maker_id = three.maker_id
+LEFT JOIN (SELECT maker_id, COUNT(type_id) AS type4 FROM doujo.brands WHERE type_id = 4 GROUP BY maker_id) AS four
+ON one.maker_id = four.maker_id
+LEFT JOIN (SELECT maker_id, COUNT(type_id) AS type5 FROM doujo.brands WHERE type_id = 5 GROUP BY maker_id) AS five
+ON one.maker_id = five.maker_id
+ORDER BY one.maker_id

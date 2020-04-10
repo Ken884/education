@@ -1,0 +1,3 @@
+SELECT workname
+FROM doujo.manga_tbl
+WHERE workname LIKE '%こち%亀%'

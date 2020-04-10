@@ -1,0 +1,6 @@
+SELECT A.workname, A.broadcast_from, A.broadcast_to
+FROM (SELECT Y.workname, X.broadcast_from, X.broadcast_to, X.manga_id
+FROM doujo.anime_tbl AS X
+JOIN doujo.manga_tbl AS Y
+ON Y.id = X.manga_id) AS A
+WHERE A.broadcast_from = (SELECT MAX(B.broadcast_from) FROM doujo.anime_tbl AS B WHERE A.manga_id = B.manga_id)

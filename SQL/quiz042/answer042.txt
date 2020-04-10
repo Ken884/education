@@ -1,0 +1,5 @@
+SELECT C.name, MAX(order_date)
+FROM doujo.customers AS C
+JOIN doujo.sales AS S
+ON C.id = S.customer_id
+GROUP BY C.name

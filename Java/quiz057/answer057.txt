@@ -1,0 +1,1 @@
+ArrayList<Integer> list = new ArrrayList<Integer>();でオブジェクト生成。

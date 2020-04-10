@@ -1,0 +1,5 @@
+SELECT C.name, S.last_order
+FROM (SELECT customer_id, MAX(order_date) AS last_order FROM doujo.sales GROUP BY customer_id) AS S
+JOIN doujo.customers AS C
+ON S.customer_id = C.id
+WHERE DATEDIFF(CURRENT_DATE, S.last_order) >= 360

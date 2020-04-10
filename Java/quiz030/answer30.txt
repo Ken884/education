@@ -1,0 +1,5 @@
+ケース　命名指針、記法
+camelCase, Pascalcase, SNAKE_CASE
+
+メソッド名→キャメル
+変数名→キャメル
