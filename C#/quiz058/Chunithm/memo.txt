@@ -1,0 +1,40 @@
+rate = (ave bests + recents)
+
+
+performanceカラムをテーブルに追加する。
+performanceで並べ替え
+
+BEST
+
+SELECT *, (CASE WHEN p.score >= 1007500 THEN s.constant + 2
+            WHEN p.score >= 1005000 THEN s.constant + 1.5 + ((p.score - 1005000)/5000)
+			WHEN p.score >= 1000000 THEN s.constant + 1 + ((p.score - 1000000)/10000)
+			WHEN p.score >= 975000 THEN s.constant + ((p.score - 975000)/25000)
+			ELSE s.constant - ((975000 - p.score)/16666) END) as performance
+FROM chunithm.play as p
+JOIN chunithm.song as s
+ON p.song_id = s.id
+where p.user_id = 1
+GROUP BY p.song_id
+Order by max(performance) desc limit 30
+
+
+RECENT
+
+SELECT x.performance
+FROM(SELECT 	(CASE WHEN p.score >= 1007500 THEN s.constant + 2
+            WHEN p.score >= 1005000 THEN s.constant + 1.5 + ((p.score - 1005000)/5000)
+			WHEN p.score >= 1000000 THEN s.constant + 1 + ((p.score - 1000000)/10000)
+			WHEN p.score >= 975000 THEN s.constant + ((p.score - 975000)/25000)
+			ELSE s.constant - ((975000 - p.score)/16666) END) as performance
+FROM chunithm.play as p
+JOIN chunithm.song as s
+ON p.song_id = s.id
+where p.user_id = 1
+Order by p.play_at desc limit 40) AS x
+ORDER BY x.performance DESC LIMIT 10
+
+rate = Average()
+
+goal
+各プレイヤー（user_id=1～5）のレーティングを求める

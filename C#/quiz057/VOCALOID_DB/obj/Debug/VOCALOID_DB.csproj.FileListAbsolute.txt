@@ -1,0 +1,31 @@
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\bin\Debug\DBAccsess2.exe.config
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\bin\Debug\DBAccsess2.exe
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\bin\Debug\DBAccsess2.pdb
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\bin\Debug\MySql.Data.dll
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\bin\Debug\Google.Protobuf.dll
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\bin\Debug\MySql.Data.xml
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\obj\Debug\VOCALOID_DB.csprojAssemblyReference.cache
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\obj\Debug\DBAccsess.Create.resources
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\obj\Debug\DBAccsess2.Properties.Resources.resources
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\obj\Debug\DBAccess.SearchResult.resources
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\obj\Debug\VOCALOID_DB.csproj.GenerateResource.cache
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\obj\Debug\VOCALOID_DB.csproj.CoreCompileInputs.cache
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\obj\Debug\VOCALOID_DB.csproj.CopyComplete
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\obj\Debug\DBAccsess2.exe
+C:\Users\kushida.teppei\source\repos\VOCALOID DB\VOCALOID_DB\obj\Debug\DBAccsess2.pdb
+C:\quiz\C#\quiz057\VOCALOID_DB\bin\Debug\DBAccsess2.exe.config
+C:\quiz\C#\quiz057\VOCALOID_DB\bin\Debug\DBAccsess2.exe
+C:\quiz\C#\quiz057\VOCALOID_DB\bin\Debug\DBAccsess2.pdb
+C:\quiz\C#\quiz057\VOCALOID_DB\bin\Debug\Google.Protobuf.dll
+C:\quiz\C#\quiz057\VOCALOID_DB\bin\Debug\BouncyCastle.Crypto.dll
+C:\quiz\C#\quiz057\VOCALOID_DB\bin\Debug\MySql.Data.xml
+C:\quiz\C#\quiz057\VOCALOID_DB\obj\Debug\VOCALOID_DB.csprojAssemblyReference.cache
+C:\quiz\C#\quiz057\VOCALOID_DB\obj\Debug\DBAccsess.Create.resources
+C:\quiz\C#\quiz057\VOCALOID_DB\obj\Debug\DBAccsess2.Properties.Resources.resources
+C:\quiz\C#\quiz057\VOCALOID_DB\obj\Debug\DBAccess.SearchResult.resources
+C:\quiz\C#\quiz057\VOCALOID_DB\obj\Debug\VOCALOID_DB.csproj.GenerateResource.cache
+C:\quiz\C#\quiz057\VOCALOID_DB\obj\Debug\VOCALOID_DB.csproj.CoreCompileInputs.cache
+C:\quiz\C#\quiz057\VOCALOID_DB\obj\Debug\VOCALOID_DB.csproj.CopyComplete
+C:\quiz\C#\quiz057\VOCALOID_DB\obj\Debug\DBAccsess2.exe
+C:\quiz\C#\quiz057\VOCALOID_DB\obj\Debug\DBAccsess2.pdb
