@@ -38,14 +38,17 @@ namespace quiz056
             TimeSpan end = dateTimePicker3.Value.TimeOfDay;
             TimeSpan rest = RestDuration(start, end);
             TimeSpan night = new TimeSpan(22, 0, 0);
+            TimeSpan nightEnd = new TimeSpan(5, 0, 0);
 
 
-            int wage = Convert.ToInt32(textBox1.Text);
-            int hourly = Convert.ToInt32((end - start - rest).TotalHours);
-            int dayShift = Convert.ToInt32((night - start - rest).TotalHours);
-            int nightShift = Convert.ToInt32((end - night).TotalHours);
-            int salaryBase = wage * hourly;
-            int salary;
+            double wage = Convert.ToDouble(textBox1.Text);
+            double hourly = Convert.ToDouble((end - start - rest).TotalHours);
+            double dayShift = Convert.ToDouble((night - start - rest).TotalHours);
+            double nightShift = Convert.ToDouble(NightDuration(start, end).TotalHours);
+            double salaryBase = wage * hourly;
+            double salary;
+
+            Console.WriteLine(nightShift);
 
             if (start > end)
             {
@@ -59,39 +62,46 @@ namespace quiz056
 
             else if (dateTimePicker1.Value.DayOfWeek == DayOfWeek.Sunday)
             {
-                if (end < night)
+                if (hasNightDuration(start, end))
                 {
-                    salary = salaryBase + (int)(salaryBase * 0.35);//休日
-                    textBox4.Text = salary.ToString();
+                    salary = (wage * dayShift * 1.35) + (wage * nightShift * 1.6);//休日深夜
+                    textBox4.Text = Convert.ToInt32(salary).ToString();
+                    
                 }
                 else
                 {
-                    salary = (int)(wage * dayShift * 1.35) + (int)(wage * nightShift * 1.6);//休日深夜
-                    textBox4.Text =salary.ToString();
+                    salary = salaryBase + (salaryBase * 0.35);//休日
+                    textBox4.Text = Convert.ToInt32(salary).ToString();
                 }
             }
             else if (dateTimePicker1.Value.DayOfWeek != DayOfWeek.Sunday)
             {
-                if ((end > night) && (hourly <= 8))//平日深夜
+                if ((hasNightDuration(start, end)) && (hourly <= 8))//平日深夜
                 {
-                    salary = salaryBase + (int)(wage * nightShift * 0.25);
-                    textBox4.Text = salary.ToString();
+                    salary = salaryBase + (wage * nightShift * 0.25);
+                    textBox4.Text = Convert.ToInt32(salary).ToString();
                 }
-                else if ((end < night) && (hourly > 8))//平日時間外
+                else if (!(hasNightDuration(start, end)) && (hourly > 8))//平日時間外
                 {
-                    salary = salaryBase + (int)(wage * (hourly - 8) * 0.25);
-                    textBox4.Text = salary.ToString();
+                    salary = salaryBase + (wage * (hourly - 8) * 0.25);
+                    textBox4.Text = Convert.ToInt32(salary).ToString();
                 }
                 
-                else if((end > night) && (hourly > 8))//平日深夜時間外
+                else if((hasNightDuration(start,end)) && (start > nightEnd) && (hourly > 8))//平日深夜時間外(終業時のみ深夜)
                 {
-                    salary = salaryBase + (int)(wage * (dayShift - 8) * 0.25) + (int)(wage * nightShift * 0.5);
-                    textBox4.Text = salary.ToString();
+                    salary = salaryBase + (wage * (dayShift - 8) * 0.25) + (wage * nightShift * 0.5);
+                    textBox4.Text = Convert.ToInt32(salary).ToString();
+                }
+                else if ((hasNightDuration(start, end)) && (start < nightEnd) && (hourly > 8))
+                {
+                    salary = salaryBase + (wage * (hourly - nightShift - 8) * 0.25)
+                        + (wage * nightShift * 0.5);
+                    textBox4.Text = Convert.ToInt32(salary).ToString();
                 }
                 else
                 {
                     salary = salaryBase;
-                    textBox4.Text = salary.ToString();
+                    textBox4.Text = Convert.ToInt32(salary).ToString();
                 }
             }
 
@@ -124,6 +134,44 @@ namespace quiz056
             {
                 return none;
             }
+        }
+
+        public static TimeSpan NightDuration(TimeSpan start, TimeSpan end)
+        {
+            TimeSpan zero = new TimeSpan(0, 0, 0);
+            TimeSpan five = new TimeSpan(5, 0, 0);
+            TimeSpan twentytwo = new TimeSpan(22, 0, 0);
+
+            if(start > twentytwo || end < five)
+            {
+                return end - start;
+            }
+
+            else if (start < five && end < twentytwo)
+            {
+                return five - start;
+            }
+
+            else if(start < five && end > twentytwo)
+            {
+                return (end - twentytwo) + (five - start);
+            }
+
+            else if(start > five && end > twentytwo)
+            {
+                return end - twentytwo;
+            }
+            else
+            {
+                return zero;
+            }
+        }
+
+        public static bool hasNightDuration(TimeSpan start, TimeSpan end)
+        {
+            var five = new TimeSpan(5, 0, 0);
+            var twentytwo = new TimeSpan(22, 0, 0);
+            return start < five || end > twentytwo;
         }
 
 
